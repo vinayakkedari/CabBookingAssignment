@@ -12,6 +12,11 @@ $ npm install
 $ npm start
 ```
 
+**Node.js Version:**
+```
+$ 10.15.3
+```
+
 ## APIs
 
 Refer the swagger docs: 'http://localhost:3000/api-docs'
