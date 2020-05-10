@@ -1,0 +1,42 @@
+[
+  {
+    "driverName": "Sam",
+    "mobile_num": 9892551001,
+    "cab_number": "MH.14.VK.0001",
+    "isBooked": false,
+    "location": {
+      "lattitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "driverName": "vicky",
+    "mobile_num": 9892551002,
+    "cab_number": "MH.14.VK.0002",
+    "isBooked": false,
+    "location": {
+      "lattitude": 10,
+      "longitude": 10
+    }
+  },
+  {
+    "driverName": "danny",
+    "mobile_num": 9892551003,
+    "cab_number": "MH.14.VK.0003",
+    "isBooked": false,
+    "location": {
+      "lattitude": 10,
+      "longitude": 20
+    }
+  },
+  {
+    "driverName": "ram",
+    "mobile_num": 9892551004,
+    "cab_number": "MH.14.VK.0004",
+    "isBooked": false,
+    "location": {
+      "lattitude": 20,
+      "longitude": 10
+    }
+  }
+]
