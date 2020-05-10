@@ -24,10 +24,13 @@ Refer the swagger api-docs: 'http://localhost:3000/api-docs'
 
 ## Add .env file at root level
 
+```
 PORT=3000
 MONGODB_URL=mongodb://127.0.0.1:27017/cabBooking
 TOKEN_SECRET=ilovenodejs
 TOKEN_EXPIRES=7200
+```
+
 
 ## Credentials to authenticate user
 ```
