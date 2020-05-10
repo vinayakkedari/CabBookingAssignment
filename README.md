@@ -12,14 +12,15 @@ $ npm install
 $ npm start
 ```
 
-**Node.js Version:**
+**versions:**
 ```
-$ 10.15.3
+$ Node : v10.15.3
+$ MongoDB : v3.2.16
 ```
 
 ## APIs
 
-Refer the swagger docs: 'http://localhost:3000/api-docs'
+Refer the swagger api-docs: 'http://localhost:3000/api-docs'
 
 ## Add .env file at root level
 

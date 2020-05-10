@@ -1,0 +1,141 @@
+{
+	"info": {
+		"name": "Cab Booking APIs",
+		"_postman_id": "3d706c90-091f-4cae-81dc-b83f570748a3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/authenticateUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"email\" : \"vinayak@gmail.com\",\n\"password\": \"admin123\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/authenticateUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"authenticateUser"
+					]
+				},
+				"description": "User Authentication API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/booking/book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpbmF5YWtAZ21haWwuY29tIiwiaWQiOiI1ZWI4NGNhYjIzZTE5YTRkODhhNzFmYzkiLCJpYXQiOjE1ODkxMzY1NjcsImV4cCI6MTU4OTE0Mzc2N30.gcuKnLgTEbz_QsGF6pGzDDAjYVAvQFYnluntPJHOEkc"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"pickupLocation\": {\n\t\t\"lattitude\": 0,\n\t\t\"longitude\": 0\n\t},\n\t\"dropLocation\": {\n\t\t\"lattitude\": 20,\n\t\t\"longitude\": 0\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/booking/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking",
+						"book"
+					]
+				},
+				"description": "Book Cab API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/booking/complete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpbmF5YWtAZ21haWwuY29tIiwiaWQiOiI1ZWI4NGNhYjIzZTE5YTRkODhhNzFmYzkiLCJpYXQiOjE1ODkxMzY1NjcsImV4cCI6MTU4OTE0Mzc2N30.gcuKnLgTEbz_QsGF6pGzDDAjYVAvQFYnluntPJHOEkc"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cabId\": \"5eb84cab23e19a4d88a71fca\",\n\t\"bookingId\": \"5eb84cce6d6f8b4d795fe7cb\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/booking/complete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking",
+						"complete"
+					]
+				},
+				"description": "Cab Ride complete API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/booking/pastBookings?page=1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpbmF5YWtAZ21haWwuY29tIiwiaWQiOiI1ZWI4NGNhYjIzZTE5YTRkODhhNzFmYzkiLCJpYXQiOjE1ODkxMzY1NjcsImV4cCI6MTU4OTE0Mzc2N30.gcuKnLgTEbz_QsGF6pGzDDAjYVAvQFYnluntPJHOEkc"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/booking/pastBookings?page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking",
+						"pastBookings"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "Get Past Booking Pagination API"
+			},
+			"response": []
+		}
+	]
+}

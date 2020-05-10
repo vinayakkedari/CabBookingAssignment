@@ -19,11 +19,6 @@ const validatorSchema = require('./../validator/validator');
  *     description: Authenticate user and get token
  *     tags: [Users]
  *     parameters:
- *       - name: x-access-token
- *         description: access token to authorise
- *         in: header
- *         type: string
- *         required: true
  *       - name: email
  *         description: User's email
  *         in: body
